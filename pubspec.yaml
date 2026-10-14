@@ -1,0 +1,36 @@
+name: flutter_alarm_call
+description: >-
+  Rings like an incoming call at a scheduled time, even when the app is closed:
+  an Android alarm-clock notification with a full-screen call screen over the
+  lock screen. No background isolate, so OEM battery managers cannot hold it.
+version: 0.1.0
+repository: https://github.com/Istiaq66/flutter_alarm_call
+issue_tracker: https://github.com/Istiaq66/flutter_alarm_call/issues
+topics:
+  - alarm
+  - notifications
+  - call
+  - reminder
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+  flutter: '>=3.27.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_local_notifications: ^19.4.2
+  plugin_platform_interface: ^2.1.8
+  timezone: ^0.10.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: io.github.istiaq66.flutter_alarm_call
+        pluginClass: FlutterAlarmCallPlugin
